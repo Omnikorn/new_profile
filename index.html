@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="./assests/CSS/style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+        <nav class="navbar  navbar-dark ">
+            <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#aboutme">ABOUT</button>
+            <a href="#work_show"><button type="button" class="btn btn-outline-secondary">WORK</button></a>
+            <a href="#contact"><button type="button" class="btn btn-outline-secondary">CONTACT</button></a>
+        </nav>
+     
+    <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+    <section class="empty"> </section>
+
+    <!-- work section showcase -->
+    <!-- project 1 -->
+    <h1 id="projects"> PROJECTS</h1>
+ <section class="container-fluid " id="work_show">
+    <div class="row justify-content-around">
+      <div class="card col-3" style="width: 18rem;">
+          <img class="card-img-top" src="./assests/pics/p1.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Yummy Fridge</h5>
+            <p class="card-text">Recipe recommendation app.</p>
+            <a href="https://omnikorn.github.io/Yummy_Fridge/" target="_blank" class="btn btn2">DEPLOYED</a>
+            <a href="https://github.com/Omnikorn/Yummy_Fridge" target="_blank" class="btn btn2"> REPO</a>
+            <button class="btn btn2" data-toggle="modal" data-target="#project1">INFO</button>
+          </div>
+        </div>
+
+    <!-- PROJECT 2 -->
+        <div class="card col-3" style="width: 18rem;">
+          <img class="card-img-top" src="./assests/pics/mac pro.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">WRK with</h5>
+            <p class="card-text">A web dev collaboration platform</p>
+            <a href="https://wrkwith-app.herokuapp.com/" target="_blank" class="btn btn2">DEPLOYED</a>
+            <a href="https://github.com/Omnikorn/wrkwith-app" target="_blank" class="btn btn2"> REPO</a>
+            <button class="btn btn2" data-toggle="modal" data-target="#project2">INFO</button>
+          </div>
+        </div>
+
+    <!-- PROJECT 3 -->
+        <div class="card col-3" style="width: 18rem;">
+          <img class="card-img-top" src="./assests/pics/p2.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">The Big Day</h5>
+            <p class="card-text">The ultimate wedding planning app</p>
+            <a href="https://omnikorn.github.io/JS_quiz/" target="_blank" class="btn btn2">DEPLOYED</a>
+            <a href="https://github.com/Omnikorn/JS_quiz" target="_blank" class="btn btn2"> REPO</a>
+            <button class="btn btn2" data-toggle="modal" data-target="#project3">INFO</button>
+          </div>
+        </div>
+    </div>
+ </section>
+<!-- MODAL -->
+<!-- about me modal -->
+<div class="modal fade" id="aboutme" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content me">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">About me.. </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="./assests/pics/Me_Purple.jpg" class="card-img-top">
+       <P> Hi, I am a full stack web developer. recent graduat of the Manchester University Coding bootcamp. I love building costume websites. 
+         in my spare time i do some graphic desing and pottery. I am leaning to paint. 
+       </P>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- yummy fidge info modal -->
+<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content me">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Yummy Fridge</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="./assests/pics/yummy.png" class="card-img-top">
+       <P> This is a recipe recommendation app where a user will enter a list of ingredients they have in their fridge and our app will do its magic and come up with a number of recipes along with a cocktail suggestion.  Who doesn’t need a good cocktail (or 2 ) at the end of the day. 
+        The app utilises Spoonacular API on the backend and built with HTML, JavaScript and CSS. 
+         
+       </P>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WRK WITH MODAL  -->
+<div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content me">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">WRK with</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="./assests/pics/cover-s.png" class="card-img-top">
+       <P> This was an attempt at creating an alternative to stack overflow. The premise is simple. A developer working on a project would advertise the project to attract possible collaborators. This could be a project from start or a part of a project or a specific problem. Interested developers would register as interested collaborators and lines of communication would open between the project owner and future collaborators. A win-win situation.  
+         
+       </P>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- The Big Day modal -->
+<div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content me">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">The Big Day</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- <img src="./assests/pics/Me_Purple.jpg" class="card-img-top"> -->
+       <P> This is a MERN full stack application aimed to simplify the wedding planning process. Couples can enter their wedding details including dates, venue and menu details and generate an electronic email list of their guests who will receive an email of these details. The guests can then log in to the “wedding” on our application to RSVP and confirm their menu choice.   
+         
+       </P>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT SECTION -->
+
+<div  id="contact" class="card mb-3" style="max-width: 100%">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="./assests/pics/dish1.png" class="img-fluid rounded-start" alt="sattelite dish">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h3 class="card-title">CONTACT ME</h3>
+        <p class="card-text">Eamil: Harith.albadry@gmail.com</p>
+        <p class="card-text">linkedin:<a href="https://www.linkedin.com/in/harithalbadry/" target="_blank"> linkedin.com/harithalbadry</a> </p>
+        <p class="card-text">Instagram:<a href="https://www.instagram.com/design_81_uk/" target="_blank"> instagram.com/design_81_uk</a> </p>
+        <p class="card-text">github:<a href="https://github.com/Omnikorn" target="_blank"> github.com/Omnikorn</a> </p>
+
+        <a href="./assests/files/Harith Albadry CV july 2021.pdf" download=""><button class="btn btn2">Download My CV</button></a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- footer -->
+ <footer class="foot">
+   <h8> made by Harith</h8>
+   <h8> (c) 2021</h8>
+ </footer>
+
+
+<!-- SCRIPT LINKS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="./assests/JS/script.js"></script>
+</body>
+</html>
